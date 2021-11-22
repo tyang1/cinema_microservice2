@@ -2,7 +2,7 @@
 const express = require("express");
 const morgan = require("morgan");
 const helmet = require("helmet");
-const movieAPI = require("../api/movies");
+const movieAPI = require("../api/movies-service-movies.js");
 
 //server factory function:
 /*

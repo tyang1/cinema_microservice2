@@ -1,5 +1,5 @@
 //repository is used to abstract over database, which allows the underlying database implementation to change
-//we do not want to expose database access to the public, only data access
+//by not exposing database access to the public, only data access
 //1. connected database, port that can accept a microservice
 //2. return an object of methods
 
@@ -110,4 +110,4 @@ export const connect = (connection) => {
   });
 };
 
-//client -> server -> translated request to repo methods
+//client -> server -> translated request to repo methods (data plane to achieve decoupling between client and database )

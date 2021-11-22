@@ -2,9 +2,9 @@
 // we load all the depencies we need
 const { EventEmitter } = require("events");
 const server = require("./server/server/movie-service-server.js");
-const repository = require("./repository/repository");
-const config = require("./config/movie-service-config.js");
-const connection = require("./server/mongodb-replicaset.js");
+const repository = require("../repository");
+const config = require("../config/movie-service-config.js");
+const connection = require("../server/mongodb-replicaset.js");
 const mediator = new EventEmitter();
 
 // event listener when the repository has been connected
